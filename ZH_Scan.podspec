@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZH_Scan'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ZH_Scan.'
+  s.version          = '1.0'
+  s.summary          = '使用系统原生库实现的扫描组件'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  使用系统原生库实现扫描功能；扫描功能和UI视图分离；使用面向接口思想，扫描动画可扩展；底层替换扫描库业务无感知；
                        DESC
 
   s.homepage         = 'https://github.com/miaozhihui/ZH_Scan'
@@ -35,7 +35,9 @@ TODO: Add long description of the pod here.
   # s.resource_bundles = {
   #   'ZH_Scan' => ['ZH_Scan/Assets/*.png']
   # }
-
+  
+  s.resources = "ZH_Scan/Assets/ZH_Scan.bundle"
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

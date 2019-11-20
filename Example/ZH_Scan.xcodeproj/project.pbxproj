@@ -37,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		27103E37CAF24A43883D4435 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		27103E37CAF24A43883D4435 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		298EBCFD557B41A8B198453B /* Pods_ZH_Scan_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZH_Scan_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CC9DB363158AFB933843B2F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2CC9DB363158AFB933843B2F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZH_Scan_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZH_Scan_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,7 +65,7 @@
 		858CF1548C8A31A7F8FC2B6B /* Pods-ZH_Scan_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZH_Scan_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZH_Scan_Tests/Pods-ZH_Scan_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD64E807878612B657578828 /* Pods-ZH_Scan_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZH_Scan_Example.release.xcconfig"; path = "Target Support Files/Pods-ZH_Scan_Example/Pods-ZH_Scan_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DD9694809E371D5855001D97 /* ZH_Scan.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZH_Scan.podspec; path = ../ZH_Scan.podspec; sourceTree = "<group>"; };
+		DD9694809E371D5855001D97 /* ZH_Scan.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZH_Scan.podspec; path = ../ZH_Scan.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FC41391235BCEDE257BCD950 /* Pods-ZH_Scan_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZH_Scan_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZH_Scan_Tests/Pods-ZH_Scan_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				FC41391235BCEDE257BCD950 /* Pods-ZH_Scan_Tests.debug.xcconfig */,
 				858CF1548C8A31A7F8FC2B6B /* Pods-ZH_Scan_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				B42877E71C41E901A9576E49 /* [CP] Embed Pods Frameworks */,
+				1ACF938BDA3F3CB9C8C16AA4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -295,6 +295,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1ACF938BDA3F3CB9C8C16AA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZH_Scan_Example/Pods-ZH_Scan_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ZH_Scan/ZH_Scan.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZH_Scan.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZH_Scan_Example/Pods-ZH_Scan_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		21D7B2FFECA55CE68DE23ACE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,24 +333,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B42877E71C41E901A9576E49 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZH_Scan_Example/Pods-ZH_Scan_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ZH_Scan/ZH_Scan.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZH_Scan.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZH_Scan_Example/Pods-ZH_Scan_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F86BA234C22F7FB6F77A63C0 /* [CP] Check Pods Manifest.lock */ = {

@@ -1,0 +1,16 @@
+PODS:
+  - ZH_Scan (1.0)
+
+DEPENDENCIES:
+  - ZH_Scan (from `../`)
+
+EXTERNAL SOURCES:
+  ZH_Scan:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZH_Scan: 4a247c167efb0e7b02baa5d349a03785dc4f4381
+
+PODFILE CHECKSUM: c69d9375361879d2acfc05ac2ea5400aebdd0b90
+
+COCOAPODS: 1.8.4
