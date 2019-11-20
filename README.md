@@ -10,6 +10,11 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+有几大优点：
+1、使用系统原生库实现扫描功能；
+2、扫描功能和UI视图分离；
+3、使用面向接口思想，扫描动画可扩展；
+4、底层替换扫描库业务无感知；
 
 ## Installation
 
